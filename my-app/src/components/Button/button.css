@@ -1,0 +1,7 @@
+.btn {
+    background-color: springgreen;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
