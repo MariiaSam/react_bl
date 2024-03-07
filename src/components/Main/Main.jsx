@@ -12,7 +12,7 @@ const Main = () => {
       <Button text="Add" type="button"></Button>
 
       <Button text="Delete"></Button>
-      <MovieList text='Best Movies' items={movies}></MovieList>
+      <MovieList title='Best Movies' items={movies}></MovieList>
     </main>
   );
 };

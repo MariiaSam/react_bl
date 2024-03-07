@@ -1,12 +1,14 @@
+import MovieListItem from "./MovieListItem";
+
 import "./movie-list.css"
 
-const MovieList = ({ text, items }) => {
-const elements = items.map(el => <li key={el.id}>{el.title}, {el.year}</li> )
+const MovieList = ({ title, items = [] }) => {
+const elements = items.map(el => <MovieListItem key={el.id} title={el.title} year={el.year} /> )
 
   return (
     <>        
-      <h3>{text}</h3>
-            <ul className="movie-list">
+            {title && <h3>{title}</h3>}
+           <ul className="movie-list">
                 {elements}
             </ul>
     </>
