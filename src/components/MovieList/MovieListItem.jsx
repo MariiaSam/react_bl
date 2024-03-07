@@ -1,4 +1,3 @@
-import './movie-list.css'
 
 const MovieListItem = ({ title, year}) => {
 return (<li>{title}

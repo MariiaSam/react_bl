@@ -9,10 +9,10 @@ const Main = () => {
     <main>
       <h2>Page subtitle</h2>
       <p>page description</p>
-      <Button text="Add" type="button"></Button>
+      <Button text="Add" type="button" active={false}></Button>
 
       <Button text="Delete"></Button>
-      <MovieList title='Best Movies' items={movies}></MovieList>
+      <MovieList title='Best Movies' items={movies} active={true}></MovieList>
     </main>
   );
 };
